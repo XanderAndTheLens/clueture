@@ -34,16 +34,19 @@
 	}
   </script>
   
-  {#if connected}
-	<h1>Join Game</h1>
-	<input bind:value={gameCode} placeholder="Enter game code" />
-	<input bind:value={username} placeholder="Enter your username" />
-	<button on:click={joinGame}>Join Game</button>
+  <div class="container">
+	{#if connected}
+	  <h1>Join Game</h1>
+	  <input class="styled-input" bind:value={gameCode} placeholder="Enter game code" />
+	  <input class="styled-input" bind:value={username} placeholder="Enter your username" />
+	  <button on:click={joinGame}>Join Game</button>
   
-	<h2>Answer the Question</h2>
-	<input bind:value={answer} placeholder="Write a fact about youself" />
-	<button on:click={submitAnswer}>Submit Answer</button>
-  {:else}
-	<p>Connecting to the server...</p>
-  {/if}
+	  <h2>Answer the Question</h2>
+	  <input class="styled-input" bind:value={answer} placeholder="Enter your answer" />
+	  <button on:click={submitAnswer}>Submit Answer</button>
+	{:else}
+	  <p>Connecting to the server...</p>
+	{/if}
+  </div>
+  
   

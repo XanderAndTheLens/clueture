@@ -1,3 +1,88 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+/* app.css */
+
+/* Basic body styling for dark theme */
+body {
+	background-color: #171717;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+  }
+  
+  /* Container styling to center content */
+  .container {
+	text-align: center;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto; /* Center the container horizontally */
+	box-sizing: border-box;
+  }
+  
+  /* Styling for inputs */
+  input[type="text"] {
+	background-color: #9f6fff;
+	color: #000000; /* Black text color */
+	border: none;
+	padding: 10px;
+	margin: 10px 0;
+	width: 100%;
+	max-width: 400px;
+	border-radius: 10px; /* Rounded corners */
+	font-size: 16px;
+	box-sizing: border-box; /* Ensures padding doesn’t affect total width */
+  }
+  
+
+  /* Styling for inputs */
+.styled-input {
+	background-color: #565656;
+	color: #ffffff; /* Black text color */
+	border: none;
+	padding: 10px;
+	margin: 10px 0;
+	width: 100%;
+	max-width: 400px;
+	border-radius: 20px; /* Rounded corners */
+	font-size: 16px;
+	box-sizing: border-box; /* Ensures padding doesn’t affect total width */
+  }
+  /* Styling for buttons */
+  button {
+	background-color: #ffa500; /* Bright orange background */
+	color: #000000; /* Black text color */
+	border: none;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	box-sizing: border-box;
+  }
+  
+  button:hover {
+	background-color: #ff8c00; /* Slightly darker orange on hover */
+  }
+  
+
+  /* Styling for the answer list on the main screen */
+.answer-list {
+	list-style-type: none; /* Remove bullet points */
+	padding: 0; /* Remove default padding */
+	text-align: left; /* Align text to the left */
+	margin: 20px auto; /* Center the list itself */
+	width: 100%;
+	max-width: 400px;
+  }
+  
+  /* Styling for the username and answer */
+  .username {
+	color: #00aaff; /* Light blue */
+  }
+  
+  .answer {
+	color: #ffa500; /* Bright orange */
+  }
+  
